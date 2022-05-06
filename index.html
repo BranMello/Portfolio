@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b0a13c75f7.js"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>.: Bran Morcant :.</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <!-- logo ou icone -->
+            <i class="fa-solid fa-terminal"></i>
+        </div>
+        <ul>
+            <!-- redes sociais -->
+            <li>
+                <a target="_blank"
+                    href="https://github.com/BranMello">github</a>
+            </li>
+            <li>
+                <a target="_blank"
+                    href="mail to:branmorcant@gmail.com">email</a>
+            </li>
+            <li>
+                <a target="_blank"
+                    href="https://wa.me/+5561998001692">whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section id="apresenta">
+            <div id="imagem">
+                <img id="ilustra" src="./imagens/Asset 1.png"
+                    alt="ilustração de pessoa sentada">
+            </div>
+            <div id="name">
+                <div>
+                    <h1>Bran Morcant Mello</h1>
+                    <p>Fullstack Developer em desenvolvimento.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angles-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Busco entender o mundo a partir da ótica que tenho como designer e traduzir experiências em minhas escritas. Procuro entrelaçar minhas vivências e estudos com meu trabalho ao desenhar experiências. Tenho facilidade em aprender coisas novas e busco sempre entender como novas experiências me transformam. Formado em Design Gráfico, tenho trabalhado com design gráfico, branding e diagramação. Recentemente iniciei uma nova jornada ao buscar o aprendizado de Desenvolvimento Fullstack.
+                </p>
+                <div class="form"> 
+                    <div>
+                        <p>vamos conversar!</p>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="seu melhor email xD">
+                        <button>enviar!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- javascript -->
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+
+        }
+    </script>
+</body>
+
+</html>
